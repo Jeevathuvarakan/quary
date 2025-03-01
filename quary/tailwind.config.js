@@ -18,9 +18,7 @@ export default {
       },
 
       fontFamily: {
-
-        Raleway: ["Raleway", "serif"],
-        Inter: ["Inter", "serif"]
+        Yantramanav: ["Yantramanav", "sans-serif"],
       },
     },
   },
