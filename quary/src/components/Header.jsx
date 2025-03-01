@@ -42,14 +42,14 @@ function Header() {
 
     return (
         <>
-            <div className="pt-[16px] pb-[16px] px-[16px] bg-white w-full transition-transform duration-300">
+            <div className="pt-[16px] pb-[16px] px-[16px] bg-black w-full transition-transform duration-300 text-white">
                 <div className="container mx-auto">
                     <div className="flex justify-between items-center">
                         <Link to="/" onClick={() => window.scrollTo({ top: 0 })}>
                             <img
                                 src={LogoConfig.src}
                                 alt={LogoConfig.alt}
-                                className="w-[260px] h-[65px] object-cover"
+                                className="w-[60px] h-[65px] object-cover"
                             />
                         </Link>
 
@@ -63,14 +63,14 @@ function Header() {
                                             <Link
                                                 key={index}
                                                 to={item.path}
-                                                className={`py-[15px] xl:px-[20px] lg:px-[8px] px-[20px] font-medium items-center flex gap-[48px] text-[20px] leading-[26px] 
-                          ${isActive ? "text-[#DA0C16]" : "text-[#111116]"
-                                                    } hover:text-[#DA0C16]`}
+                                                className={`py-[15px] xl:px-[20px] lg:px-[8px] px-[20px] font-medium items-center flex gap-[48px] text-[18px] leading-[26px] 
+                          ${isActive ? "text-[#FF7318]" : "text-white"
+                                                    } hover:text-[#FF7318]`}
                                             >
                                                 <p
-                                                    className={`cursor-pointer text-[20px] font-Barlow 
-                            ${isActive ? "text-[#DA0C16]" : "text-[#111116]"
-                                                        } hover:text-[#DA0C16]`}
+                                                    className={`cursor-pointer text-[18px] font-Yantramanav uppercase
+                            ${isActive ? "text-[#FF7318]" : "text-white"
+                                                        } hover:text-[#FF7318]`}
                                                 >
                                                     {item.label}
                                                 </p>
