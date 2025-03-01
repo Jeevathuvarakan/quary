@@ -7,7 +7,6 @@ import MobileMenu from "./MobileMenu";
 import { HeaderItems } from "../constants/Data";
 
 function Header() {
-<<<<<<< HEAD
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [scrollPosition, setScrollPosition] = useState(0);
     const [hideHeader, setHideHeader] = useState(false);
@@ -105,13 +104,7 @@ function Header() {
             </div>
         </>
     );
-=======
   
-
-  return (
-    <div>Header</div>
-  )
->>>>>>> e962894d22a8a417aecf073395b84f8744149bdc
 }
 
 export default Header;
