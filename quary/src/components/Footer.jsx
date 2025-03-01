@@ -1,12 +1,13 @@
 import React from 'react'
 import LogoConfig from '../constants/LogoConfig'
 import { FaFacebook } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
         <div className='px-[16px] py-[32px] bg-black font-Yantramanav text-white'>
             <div className='container mx-auto'>
-                <div className='flex justify-between'>
+                <div className='flex lg:flex-row flex-col gap-[20px] justify-between'>
                     <div className='flex flex-col gap-[16px]'>
                         <div className='flex gap-[12px] items-center'>
                             <img src={LogoConfig.src} alt='logo' className='object-cover h-[70px] w-[90px]' />
@@ -36,8 +37,10 @@ function Footer() {
                         <div className='flex flex-col gap-[8px]'>
                             <p>Quick Links</p>
                             <div className='flex flex-col gap-[12px]'>
+                                <Link to ="/">
+                                <p className=''>Home</p>
+                                </Link>
                                 <p className=''>home</p>
-                                <p>home</p>
                                 <p>home</p>
                                 <p>home</p>
                             </div>
