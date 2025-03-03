@@ -9,8 +9,8 @@ function HomeAboutUs() {
                 <div className='flex flex-col gap-[20px] font-Yantramanav py-16 lg:w-[638px] pr-[48px] w-full'>
                     <h5 className=" text-[20px] text-[#FF7318] uppercase lg:w-[590px] w-full lg:leading-[58px]">About Us</h5>
                     <h1 className="text-[#151515] lg:text-[48px] md:text-[24px] text-[12px] font-bold lg:w-[590px] w-full lg:leading-[58px]">Forging Sucess From Earth's Depths </h1>
-                    <div className="m-[0px] [0px] [14.4px] lg:w-[590px] w-full pl-[48px]">
-                    <p className=" text-[16px] font-bold text-[#151515]  lg:w-[516px] w-full">Praesent vel vulputate ligula, mollis facilisis est. In non mauris quis ex placerat iaculis. Maecenas sed auctor arcu. Suspendisse egestas pellentesque quam sit amet cursus. 
+                    <div className="m-[0px] [0px] [14.4px] lg:w-[590px] w-full pl-[48px] border-[0px] border-solid border-l-[2px] border-[#FF7318]">
+                    <p className=" text-[16px] font-bold text-[#151515]  lg:w-[516px] w-full " >Praesent vel vulputate ligula, mollis facilisis est. In non mauris quis ex placerat iaculis. Maecenas sed auctor arcu. Suspendisse egestas pellentesque quam sit amet cursus. 
                     Nulla pharetra euismod tellus eu sollicitudin.</p>
                     </div>
                     <div className="m-[0px] [0px] [14.4px] lg:w-[590px] w-full pl-[48px]">
@@ -27,8 +27,9 @@ function HomeAboutUs() {
                     
                     
                 </div>
-                <div
-                    className="flex gap-[60px] px-[16px]  inset-0  py-[100px]  text-white  lg:w-[634px] w-full lg:leading-[88px] items-left"
+                <div className="flex gap-[60px] px-[16px]  inset-0  py-[100px]  text-white  lg:w-[634px] w-full lg:leading-[88px] items-right">
+                    <div
+                    className="flex gap-[60px] px-[16px]  inset-0  py-[100px]  text-white  lg:w-[634px] w-full lg:leading-[88px] items-right"
                     style={{
                         backgroundImage: ` url(${HerobannerImg})`,
                         backgroundSize: "cover",
@@ -36,8 +37,8 @@ function HomeAboutUs() {
 
                       
                     }}
-                >
-
+                    >
+                    </div>
                 </div>
             </div>
         </>

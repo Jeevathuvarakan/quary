@@ -90,7 +90,7 @@ function Footer() {
                 </div>
             </div>
             <div className=' border border-solid border-b-[1px] w-full'></div>
-            <div className='flex md:flex-row flex-col justify-between  px-[16px] py-[10px]'>
+            <div className='container mx-auto flex md:flex-row flex-col justify-between  px-[16px] py-[10px]'>
               <p className='text-[18px] text-white font-Manrope md:text-start text-center '>Copyright © 2024 Jeevathuvarakan.</p>
               <div className='flex md:flex-row  flex-col  md:gap-[16px] gap-[4px] items-center'>
                 <p className='text-[18px] text-white font-Manrope'>Term of Services</p>
