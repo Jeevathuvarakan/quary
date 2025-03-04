@@ -6,7 +6,7 @@ function PrimaryButton({
     widthsizemd,
     widthsizesm,
     bgColor = "#FF7318", // Default background color
-    textColor = "#whitw", // Default text color
+    textColor = "#white", // Default text color
     hoverBgColor = "black", // Default hover background color
     hoverTextColor = "white" // Default hover text color
 }) {

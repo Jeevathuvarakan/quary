@@ -4,7 +4,7 @@ import { JCBImage } from "../../constants/Data";
 function HomeWhyChoose() {
     return (
         <>
-            <div className="pl-[60px] py-[60px] bg-[#E9E9E9] font-Yantramanav">
+            <div className="pl-[80px] py-[100px] bg-[#E9E9E9] font-Yantramanav">
                 <div className='pr-[100px] bg-[#ff7318]'>
                     <div className=' flex justify-between font-Yantramanav bg-white'>
                         <div

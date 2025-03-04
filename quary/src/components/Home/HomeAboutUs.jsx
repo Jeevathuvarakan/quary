@@ -6,7 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 function HomeAboutUs() {
     return (
         <>
-            <div className="px-[16px] py-[60px]">
+            <div className="px-[80px] py-[100px]">
                 <div className='container mx-auto py-[10px] flex justify-between font-Yantramanav'>
                     <div className='flex flex-col gap-[20px] lg:w-[638px] w-full'>
                         <h5 className=" text-[20px] text-[#FF7318] uppercase lg:w-[590px] w-full lg:leading-[58px]">About Us</h5>
