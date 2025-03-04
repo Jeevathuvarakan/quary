@@ -9,9 +9,9 @@ function ServiceCard({ image, title, heading, body, text, icon }) {
                 <h1 className='text-[32px] text-black font-bold'>{heading}</h1>
                 <p className='text-[16px] text-[#7a7a7a]'>{body}</p>
             </div>
-            <div className='flex gap-[4px]'>
+            <div className='flex gap-[6px] items-center'>
                 <button className='text-[20px] font-serif uppercase'>{text}</button>
-                <img src={icon} alt='icon' className='object-cover' />
+                <img src={icon} alt='icon' className='object-cover h-[14px] w-[20px]' />
             </div>
         </div>
     )

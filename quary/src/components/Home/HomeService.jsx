@@ -6,6 +6,14 @@ import ServiceSection from "../Services/ServiceSection";
 
 
 function HomeService() {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
     const serviceData = [
         {
             image: SampleImg,
@@ -49,7 +57,7 @@ function HomeService() {
                         </div>
                     </div>
                     <div className="py-[10px]">
-                        <Link to="/Services">
+                        <Link to="/Services" onClick={scrollToTop}>
                             <button className=" container mx-auto flex items-center justify-center bg-[#ff7318] text-white hover:bg-black px-[30px] pt-[17px] text-nowrap text-[18.4px] font-semibold leading-[20%] font-Playfair pb-[13px] h-[48px] w-[160px] cursor-pointer">MORE SERVICES</button>
                         </Link>
                     </div>
