@@ -52,7 +52,7 @@ function HomePoject() {
         ];
     return (
         <>
-            <div className="px-[80px] py-[100px]">
+            <div className="px-[16px] py-[32px]">
                 <div className='container mx-auto py-[10px] font-Yantramanav text-center'>
                     <h5 className=" text-[20px] text-[#FF7318] uppercase font-semibold w-full lg:leading-[58px]">Latest Projects</h5>
                     <h1 className="container mx-auto text-[#151515] lg:text-[48px] md:text-[24px] text-[12px] font-bold lg:w-[600px]  w-full items-center  lg:leading-[58px]">Prospecting Progress, Planting Prosperity </h1>
