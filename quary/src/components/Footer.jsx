@@ -33,7 +33,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className='flex gap-[60px]'>
+                    <div className='flex md:gap-[60px] gap-[32px] md:flex-row flex-wrap'>
                         <div className='flex flex-col gap-[8px]'>
                             <p>Quick Links</p>
                             <div className='flex flex-col gap-[12px]'>
@@ -44,7 +44,7 @@ function Footer() {
                                     <p className='hover:text-[#FF7318]'>About Us</p>
                                 </Link>
                                 <Link to="/">
-                                    <p className='hover:text-[#FF7318]'>How We Work</p>
+                                    <p className='hover:text-[#FF7318] text-nowrap'>How We Work</p>
                                 </Link>
                                 <Link to="/">
                                     <p className='hover:text-[#FF7318]'>Profiles</p>
@@ -55,7 +55,7 @@ function Footer() {
                             <p>Help & Support</p>
                             <div className='flex flex-col gap-[12px]'>
                                 <Link to="/">
-                                    <p className=''>Contact Us</p>
+                                    <p className='text-nowrap'>Contact Us</p>
                                 </Link>
                                 <p className=''>Feedback</p>
                                 <p>FAQS</p>
