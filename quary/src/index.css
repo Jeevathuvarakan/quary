@@ -4,3 +4,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .parent {
+    display: flex;
+    flex-wrap: wrap;  /* Ensures content wraps instead of overflowing */
+    justify-content: center;
+  }
+  .child {
+    flex: 1 1 300px; /* Prevents unexpected growth */
+  }
+  body, html {
+    overflow-x: hidden;
+  }
+
+  html {
+    zoom: 1; /* Forces consistent scaling */
+    text-rendering: optimizeLegibility; /* Better font rendering */
+  }

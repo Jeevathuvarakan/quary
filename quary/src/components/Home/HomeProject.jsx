@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { WorkerImage } from '../../constants/Data';
 import ProjectCard from "../Card/ProjectCard";
 import ProjectSection from "../Projects/ProjectSection";
+import PrimaryButton from "../Button/PrimaryButton";
 
 function HomePoject() {
     const projectData = [
@@ -65,9 +66,12 @@ function HomePoject() {
                             ))}
                         </div>
                     </div>
-                    <div className="py-[10px]">
+                    <div className="py-[10px] flex justify-center">
                         <Link to="/Projects">
-                            <button className=" container mx-auto flex items-center justify-center bg-[#ff7318] text-white hover:bg-black px-[30px] pt-[17px] text-nowrap text-[18.4px] font-semibold leading-[20%] font-Playfair pb-[13px] h-[48px] w-[160px] cursor-pointer">ALL POJECTS</button>
+                        <PrimaryButton
+                            name="All Projects"
+                            widthsizemd="fit"
+                            widthsizesm="full" />
                         </Link>
                     </div>
                 </div>

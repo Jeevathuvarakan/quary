@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { IconImg, SampleImg } from '../../constants/Data';
 import ServiceCard from '../Card/ServiceCard';
 import ServiceSection from "../Services/ServiceSection";
+import PrimaryButton from "../Button/PrimaryButton";
 
 
 function HomeService() {
@@ -56,10 +57,12 @@ function HomeService() {
                             ))}
                         </div>
                     </div>
-                    <div className="py-[10px]">
+                    <div className="py-[10px] flex justify-center">
                         <Link to="/Services" onClick={scrollToTop}>
-                            <button className=" container mx-auto flex items-center justify-center bg-[#ff7318] text-white hover:bg-black px-[30px] pt-[17px] text-nowrap text-[18.4px] font-semibold leading-[20%] font-Playfair pb-[13px] h-[48px] w-[160px] cursor-pointer">MORE SERVICES</button>
-                        </Link>
+                        <PrimaryButton
+                            name="More Services"
+                            widthsizemd="fit"
+                            widthsizesm="full" /> </Link>
                     </div>
                 </div>
 
