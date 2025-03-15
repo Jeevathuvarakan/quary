@@ -1,5 +1,5 @@
 import React from "react";
-import { HerobannerImg } from "../../constants/Data";
+import { HerobannerImg1 } from "../../constants/Data";
 import PrimaryButton from "../Button/PrimaryButton";
 
 function HeroBanner() {
@@ -8,7 +8,7 @@ function HeroBanner() {
             <div
                 className="flex px-[16px]  inset-0  py-[60px]  text-white   relative w-full"
                 style={{
-                    backgroundImage: ` url(${HerobannerImg})`,
+                    backgroundImage: ` url(${HerobannerImg1})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
