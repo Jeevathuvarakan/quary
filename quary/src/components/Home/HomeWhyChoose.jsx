@@ -37,13 +37,13 @@ function HomeWhyChoose() {
                     <div className="flex flex-col gap[0px]">
                       <div>
                         <p className="lg:text-[24px] md:text-[24px] text-[18px] font-semibold  w-full text-justify text-black">
-                          {" "}
-                          Project{" "}
+                          
+                          Project
                         </p>
                       </div>
                       <div>
                         <p className="lg:text-[24px] md:text-[24px] text-[18px] font-semibold  w-full text-justify text-black">
-                          {" "}
+                         
                           Completed
                         </p>
                       </div>
@@ -58,13 +58,13 @@ function HomeWhyChoose() {
                     <div className="flex flex-col gap[0px]">
                       <div>
                         <p className="lg:text-[24px] md:text-[24px] text-[18px] font-semibold  w-full text-justify text-black">
-                          {" "}
-                          Happy{" "}
+                         
+                          Happy
                         </p>
                       </div>
                       <div>
                         <p className="lg:text-[24px] md:text-[24px] text-[18px] font-semibold  w-full text-justify text-black">
-                          {" "}
+                          
                           Customers
                         </p>
                       </div>
