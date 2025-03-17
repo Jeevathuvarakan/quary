@@ -5,6 +5,7 @@ import HomeWhyChoose from '../components/Home/HomeWhyChoose'
 import HomeService from '../components/Home/HomeService'
 import HomePoject from '../components/Home/HomeProject'
 import HomeContactUs from '../components/Home/HomeContactUs'
+import HomeFeedback from '../components/Home/HomeFeedback'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
         <HomeService/>
         <HomePoject/>
         <HomeContactUs/>
+        <HomeFeedback/>
     </div>
   )
 }
