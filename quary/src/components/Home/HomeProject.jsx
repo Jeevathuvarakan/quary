@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { WorkerImage } from '../../constants/Data';
-import ProjectCard from "../Card/ProjectCard";
-import ProjectSection from "../Projects/ProjectSection";
-import PrimaryButton from "../Button/PrimaryButton";
+import ProjectCard from "../Card/ProjectCard";     
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 function HomePoject() {
     const projectData = [
@@ -51,28 +51,28 @@ function HomePoject() {
             },
             
         ];
+
+        const responsive = {
+            superLargeDesktop: { breakpoint: { max: 4000, min: 1024 }, items: 3 },
+            desktop: { breakpoint: { max: 1024, min: 768 }, items: 2 },
+            tablet: { breakpoint: { max: 768, min: 464 }, items: 1 },
+            mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
+        };
+
     return (
         <>
             <div className="px-[16px] py-[32px]">
                 <div className='container mx-auto py-[10px] font-Yantramanav text-center'>
-                    <h5 className=" text-[20px] text-[#FF7318] uppercase font-semibold w-full lg:leading-[58px]">Latest Projects</h5>
-                    <h1 className="container mx-auto text-[#151515] lg:text-[48px] md:text-[24px] text-[12px] font-bold lg:w-[600px]  w-full items-center  lg:leading-[58px]">Prospecting Progress, Planting Prosperity </h1>
+                    <h5 className=" text-[20px] text-[#FF7318] uppercase  w-full">Latest Projects</h5>
+                    <h1 className="container mx-auto text-[#151515] capitalize md:text-[48px] text-[24px] font-bold lg:w-[600px] w-full">Prospecting Progress, Planting Prosperity </h1>
                 </div>
-                <div className="py-[10px]">
+                <div className="">
                     <div className='max-w-7xl mx-auto'>
-                        <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <Carousel responsive={responsive}  infinite autoPlay autoPlaySpeed={3000} showDots>
                             {projectData.map((project, index) => (
                                 <ProjectCard key={index} {...project} />
                             ))}
-                        </div>
-                    </div>
-                    <div className="py-[10px] flex justify-center">
-                        <Link to="/Projects">
-                        <PrimaryButton
-                            name="All Projects"
-                            widthsizemd="fit"
-                            widthsizesm="full" />
-                        </Link>
+                        </Carousel>
                     </div>
                 </div>
 

@@ -10,8 +10,8 @@ function HomeAboutUs() {
                 <div className='container mx-auto '>
                     <div className="py-[10px] flex lg:flex-row flex-col gap-[24px] justify-between items-center">
                         <div className='flex flex-col gap-[20px] '>
-                            <h5 className=" text-[20px] text-[#FF7318] uppercase  w-full lg:leading-[58px]">About Us</h5>
-                            <h1 className="text-[#151515] lg:text-[48px] md:text-[24px] text-[12px] font-bold lg:w-[590px] w-full lg:leading-[58px]">Forging Success From Earth's Depths</h1>
+                            <h5 className="  text-[20px] text-[#FF7318] uppercase  w-full marker:">About Us</h5>
+                            <h1 className="container mx-auto text-[#151515] capitalize md:text-[48px] text-[24px] font-bold lg:w-[600px] w-full">Forging Success From Earth's Depths</h1>
                             <div className="m-[0px] lg:w-[590px] w-full pl-[48px] border-l-[2px] border-[#FF7318]">
                                 <p className="text-[16px] font-bold text-[#151515] lg:w-[516px] w-full">
                                     Praesent vel vulputate ligula, mollis facilisis est. In non mauris quis ex placerat iaculis.

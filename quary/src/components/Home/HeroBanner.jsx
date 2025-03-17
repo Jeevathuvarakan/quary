@@ -1,8 +1,12 @@
 import React from "react";
 import { HerobannerImg1 } from "../../constants/Data";
+import { HerobannerImg2 } from "../../constants/Data";
+import { HerobannerImg3 } from "../../constants/Data";
 import PrimaryButton from "../Button/PrimaryButton";
 
+
 function HeroBanner() {
+
     return (
         <>
             <div
@@ -11,6 +15,7 @@ function HeroBanner() {
                     backgroundImage: ` url(${HerobannerImg1})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
+                    
                 }}
             >
                 <div className="container mx-auto">

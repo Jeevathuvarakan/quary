@@ -3,7 +3,7 @@ import { HerobannerImg } from "../../constants/Data";
 
 function ProjectCard({ image, date, heading, body, text }) {
     return (
-        <div className='flex flex-col gap-[24px] shadow-lg'
+        <div className='flex flex-col gap-[24px] shadow-lg  px-[16px] py-[32px]'
          style={{
                             backgroundImage: ` url(${image})`,
                             backgroundSize: "cover",

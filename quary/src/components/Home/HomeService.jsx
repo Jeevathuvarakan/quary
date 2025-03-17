@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { IconImg, SampleImg } from '../../constants/Data';
 import ServiceCard from '../Card/ServiceCard';
 import ServiceSection from "../Services/ServiceSection";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import PrimaryButton from "../Button/PrimaryButton";
 
 
@@ -40,29 +42,78 @@ function HomeService() {
             text: "Get Started",
             icon: IconImg,
         },
+        {
+            image: SampleImg,
+            title: "Our Services",
+            heading: "Web Development",
+            body: "We build modern and scalable web applications tailored to your business needs.",
+            text: "Learn More",
+            icon: IconImg,
+        },
+        {
+            image: SampleImg,
+            title: "Design Services",
+            heading: "UI/UX Design",
+            body: "Creating intuitive and visually appealing designs to enhance user experience.",
+            text: "Explore",
+            icon: IconImg,
+        },
+        {
+            image: SampleImg,
+            title: "Marketing",
+            heading: "SEO Optimization",
+            body: "Helping your website rank higher on search engines with data-driven strategies.",
+            text: "Get Started",
+            icon: IconImg,
+        },
+        {
+            image: SampleImg,
+            title: "Our Services",
+            heading: "Web Development",
+            body: "We build modern and scalable web applications tailored to your business needs.",
+            text: "Learn More",
+            icon: IconImg,
+        },
+        {
+            image: SampleImg,
+            title: "Design Services",
+            heading: "UI/UX Design",
+            body: "Creating intuitive and visually appealing designs to enhance user experience.",
+            text: "Explore",
+            icon: IconImg,
+        },
+        {
+            image: SampleImg,
+            title: "Marketing",
+            heading: "SEO Optimization",
+            body: "Helping your website rank higher on search engines with data-driven strategies.",
+            text: "Get Started",
+            icon: IconImg,
+        },
 
     ];
+
+    const responsive = {
+        superLargeDesktop: { breakpoint: { max: 4000, min: 1024 }, items: 3 },
+        desktop: { breakpoint: { max: 1024, min: 768 }, items: 2 },
+        tablet: { breakpoint: { max: 768, min: 464 }, items: 1 },
+        mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
+    };
+
     return (
         <>
-            <div className="px-[80px] py-[100px]">
+            <div className="px-[16px] py-[32px]">
                 <div className='container mx-auto py-[10px] font-Yantramanav text-center'>
-                    <h5 className=" text-[20px] text-[#FF7318] uppercase font-semibold w-full lg:leading-[58px]">Services</h5>
-                    <h1 className="container mx-auto text-[#151515] lg:text-[48px] md:text-[24px] text-[12px] font-bold lg:w-[600px]  w-full items-center  lg:leading-[58px]">Tailored Mining Services for Every Venture </h1>
+                    <h5 className=" text-[20px] text-[#FF7318] uppercase  w-full">Services</h5>
+                    <h1 className="container mx-auto text-[#151515] capitalize md:text-[48px] text-[24px] font-bold lg:w-[600px] w-full">Tailored Mining Services for Every Venture </h1>
                 </div>
                 <div>
                     <div className='max-w-7xl mx-auto'>
-                        <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <Carousel responsive={responsive} infinite autoPlay autoPlaySpeed={3000} showDots>
                             {serviceData.map((service, index) => (
                                 <ServiceCard key={index} {...service} />
                             ))}
-                        </div>
-                    </div>
-                    <div className="py-[10px] flex justify-center">
-                        <Link to="/Services" onClick={scrollToTop}>
-                        <PrimaryButton
-                            name="More Services"
-                            widthsizemd="fit"
-                            widthsizesm="full" /> </Link>
+                        </Carousel>
                     </div>
                 </div>
 
