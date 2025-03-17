@@ -40,28 +40,40 @@ function HomeFeedback() {
     };
 
     return (
-        <>
-            <div className="px-[16px] py-[32px] font-Yantramanav">
-                <div className='container mx-auto text-center'>
-                    <div className="flex flex-col gap-[10px] items-center justify-between">
-                        <h5 className=" text-[20px] text-[#FF7318] uppercase   w-full">testimonial</h5>
-                        <h1 className="container mx-auto text-[#151515] capitalize md:text-[48px] text-[24px] font-bold lg:w-[600px] w-full ">what they say about our services </h1>
-                    </div>
-
-                    <div>
-                        <div className='max-w-7xl mx-auto'>
-                            <Carousel responsive={responsive} infinite autoPlay autoPlaySpeed={3000} showDots>
-                                {FeedbackData.map((feedback, index) => (
-                                    <FeedbackCard key={index} {...feedback} />
-                                ))}
-                            </Carousel>
-                        </div>
-                    </div>
-
-                </div>
+      <>
+        <div className="px-[16px] py-[32px] font-Yantramanav">
+          <div className="container mx-auto text-center">
+            <div className="flex flex-col gap-[10px] items-center justify-between">
+              <h5 className=" text-[20px] text-[#FF7318] uppercase   w-full">
+                testimonial
+              </h5>
+              <h1 className="container mx-auto text-[#151515] capitalize md:text-[48px] text-[24px] font-bold lg:w-[600px] w-full ">
+                what they say about our services{" "}
+              </h1>
             </div>
-        </>
 
+            <div>
+              <div className="max-w-7xl mx-auto">
+                <Carousel
+                  responsive={responsive}
+                  infinite
+                  autoPlay
+                  autoPlaySpeed={3000}
+                  showDots
+                  arrows={false}
+                  className="h-[465px]"
+                >
+                  {FeedbackData.map((project, index) => (
+                    <div key={index} className="px-4">
+                      <FeedbackCard {...project} />
+                    </div>
+                  ))}
+                </Carousel>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
     );
 }
 

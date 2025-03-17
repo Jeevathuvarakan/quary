@@ -4,7 +4,7 @@ import { JCBImage } from "../../constants/Data";
 function HomeWhyChoose() {
     return (
         <>
-            <div className=" px-[16px] pl-[16px] py-[32px] font-Yantramanav ">
+            <div className=" px-[16px] pl-[16px] md:py-[40px] py-[32px] font-Yantramanav ">
                 <div className=" ">
                     <div className="">
                         <div className="container mx-auto flex lg:flex-row flex-col-reverse gap-[10px] bg-white">

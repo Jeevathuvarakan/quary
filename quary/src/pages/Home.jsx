@@ -3,7 +3,7 @@ import HeroBanner from '../components/Home/HeroBanner'
 import HomeAboutUs from '../components/Home/HomeAboutUs'
 import HomeWhyChoose from '../components/Home/HomeWhyChoose'
 import HomeService from '../components/Home/HomeService'
-import HomePoject from '../components/Home/HomeProject'
+import HomeProject from '../components/Home/HomeProject'
 import HomeContactUs from '../components/Home/HomeContactUs'
 import HomeFeedback from '../components/Home/HomeFeedback'
 
@@ -14,7 +14,7 @@ function Home() {
         <HomeAboutUs/>
         <HomeWhyChoose/>
         <HomeService/>
-        <HomePoject/>
+        <HomeProject/>
         <HomeContactUs/>
         <HomeFeedback/>
     </div>
