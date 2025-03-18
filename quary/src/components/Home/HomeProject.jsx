@@ -1,10 +1,11 @@
-import React from "react";
-import { WorkerImage } from "../../constants/Data";
+import React, { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { WorkerImage } from "../../constants/Data"; 
 import ProjectCard from "../Card/ProjectCard";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 
 function HomeProject() {
+  const carouselRef = useRef(null);
+
   const projectData = [
     {
       image: WorkerImage,
@@ -36,15 +37,26 @@ function HomeProject() {
     },
   ];
 
-  const responsive = {
-    superLargeDesktop: { breakpoint: { max: 4000, min: 1024 }, items: 3 },
-    desktop: { breakpoint: { max: 1024, min: 768 }, items: 2 },
-    tablet: { breakpoint: { max: 768, min: 464 }, items: 1 },
-    mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
-  };
+  // Duplicate project list to create a seamless loop
+  const duplicatedProject = [...projectData, ...projectData];
+
+  useEffect(() => {
+    if (carouselRef.current) {
+      gsap.fromTo(
+        carouselRef.current, 
+        { x: "0%" },  // Start from original position
+        { 
+          x: "-50%",  // Move halfway (since we duplicated cards)
+          duration: 10, // Speed of animation
+          ease: "linear", 
+          repeat: -1, // Infinite loop
+        }
+      );
+    }
+  }, []);
 
   return (
-    <div className="px-[16px] py-[32px] relative">
+    <div className="px-[16px] py-[32px] relative overflow-hidden">
       <div className="container mx-auto py-[10px] font-Yantramanav text-center">
         <h5 className="text-[20px] text-[#FF7318] uppercase w-full">
           Latest Projects
@@ -53,22 +65,16 @@ function HomeProject() {
           Prospecting Progress, Planting Prosperity
         </h1>
       </div>
-      <div className="relative max-w-7xl mx-auto">
-        <Carousel
-          responsive={responsive}
-          infinite
-          autoPlay
-          autoPlaySpeed={3000}
-          showDots
-          arrows={false}
-          className="h-[385px]"
-        >
-          {projectData.map((project, index) => (
-            <div key={index} className="px-3">
+      
+      {/* Carousel Container */}
+      <div className="relative w-full overflow-hidden">
+        <div ref={carouselRef} className="flex gap-6  whitespace-nowrap">
+          {duplicatedProject.map((project, index) => (
+            <div key={index} className="w-[300px] flex-shrink-0">
               <ProjectCard {...project} />
             </div>
           ))}
-        </Carousel>
+        </div>
       </div>
     </div>
   );
