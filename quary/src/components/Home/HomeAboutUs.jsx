@@ -1,7 +1,7 @@
 import React from "react";
 import { WorkerImage } from "../../constants/Data";
 import PrimaryButton from "../Button/PrimaryButton";
-import { FaFacebook } from "react-icons/fa";
+import  { FaCirclePlay } from "react-icons/fa6";
 
 function HomeAboutUs() {
     return (
@@ -33,7 +33,7 @@ function HomeAboutUs() {
                                         name="Read More"
                                         widthsizemd="fit"
                                         widthsizesm="full" />
-                                    <FaFacebook className=' text-black h-20 w-20 border-[2px] rounded-full border-[#FF7318] ' />
+                                    <FaCirclePlay className=' text-black h-[70px] w-[70px] border-[4px] rounded-full border-[#FF7318] ' />
                                 </div>
                             </div>
                         </div>

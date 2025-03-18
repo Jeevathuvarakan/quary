@@ -52,7 +52,7 @@ function HomeFeedback() {
           <div>
             <div className="max-w-7xl mx-auto">
               <Swiper
-                slidesPerView={3} // Default: Show 3 cards
+                slidesPerView={1} // Default: Show 3 cards
                 breakpoints={{
                   1024: { slidesPerView: 2 }, // 3 cards on large screens
                   768: { slidesPerView: 2 }, // 2 cards on tablets

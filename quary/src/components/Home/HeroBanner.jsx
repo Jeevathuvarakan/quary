@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import { HerobannerImg1 } from "../../constants/Data";
 import { HerobannerImg2 } from "../../constants/Data";
 import { HerobannerImg3 } from "../../constants/Data";
@@ -6,15 +7,31 @@ import PrimaryButton from "../Button/PrimaryButton";
 
 
 function HeroBanner() {
+    const images = [
+        HerobannerImg1,
+        HerobannerImg2,
+        HerobannerImg3,
+      ];
+
+      const [currentIndex, setCurrentIndex] = useState(0);
+
+      useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 3000); // Change every 3 seconds
+    
+        return () => clearInterval(interval);
+      }, []);
 
     return (
         <>
             <div
-                className="flex px-[16px]  inset-0  py-[60px]  text-white   relative w-full"
+                className="items-center justify-center flex px-[16px]  inset-0  py-[60px]  text-white   relative w-full"
                 style={{
-                    backgroundImage: ` url(${HerobannerImg1})`,
+                    backgroundImage: ` url(${images[currentIndex]})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
+                    transition: "background-image 1s ease-in-out",
                     
                 }}
             >

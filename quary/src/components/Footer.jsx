@@ -1,6 +1,9 @@
 import React from "react";
 import LogoConfig from "../constants/LogoConfig";
 import { FaFacebook } from "react-icons/fa";
+import { MdCall } from 'react-icons/md';
+import { CgMail } from 'react-icons/cg';
+import { FaLocationDot } from 'react-icons/fa6';
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -76,14 +79,14 @@ function Footer() {
               <div className="flex flex-col gap-[12px]">
                 <div className="flex gap-[12px]">
                   <div className="flex flex-col gap-[12px]">
-                    <div className="border rounded-full p-[8px] ">
-                      <FaFacebook className="text-white" />
+                    <div className=" p-[8px] ">
+                      <FaLocationDot className="text-white" />
                     </div>
-                    <div className="border rounded-full p-[8px] ">
-                      <FaFacebook className="text-white" />
+                    <div className="p-[8px] ">
+                      <MdCall className="text-white" />
                     </div>
-                    <div className="border rounded-full p-[8px] ">
-                      <FaFacebook className="text-white" />
+                    <div className="p-[8px] ">
+                      <CgMail className="text-white" />
                     </div>
                   </div>
                   <div className="flex flex-col gap-[22px]">

@@ -85,8 +85,11 @@ function HomeService() {
           responsive={responsive}
           infinite
           autoPlay
-          autoPlaySpeed={3000}
-          showDots
+          autoPlaySpeed={4000} // Speed of auto movement
+          transitionDuration={0} // Removes the default transition delay
+          customTransition="transform 5s linear" // Smooth movement
+          additionalTransfrom={0} // Prevent unnecessary gaps
+          showDots={false}
           arrows={false}
           className="h-[500px]"
         >
