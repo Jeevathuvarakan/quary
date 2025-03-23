@@ -62,7 +62,7 @@ function HomeFeedback() {
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
                 modules={[Pagination, Autoplay, EffectCoverflow]}
-                className="max-w-7xl mx-auto"
+                className="max-w-7xl mx-auto h-[450px]"
                 loop={true}
                 speed={800}
                 grabCursor={true}
