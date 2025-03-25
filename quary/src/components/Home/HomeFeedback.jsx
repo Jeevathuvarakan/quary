@@ -56,13 +56,13 @@ function HomeFeedback() {
                 breakpoints={{
                   1024: { slidesPerView: 2 }, // 3 cards on large screens
                   768: { slidesPerView: 2 }, // 2 cards on tablets
-                  464: { slidesPerView: 1 }  // 1 card on mobile
+                  464: { slidesPerView: 1 }, // 1 card on mobile
                 }}
                 spaceBetween={10} // Spacing between cards
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
                 modules={[Pagination, Autoplay, EffectCoverflow]}
-                className="max-w-7xl mx-auto h-[450px]"
+                className="max-w-7xl mx-auto h-[450px] custom-swiper"
                 loop={true}
                 speed={800}
                 grabCursor={true}
@@ -77,7 +77,10 @@ function HomeFeedback() {
                 }}
               >
                 {FeedbackData.map((feedback, index) => (
-                  <SwiperSlide key={index} className="transition-transform duration-300">
+                  <SwiperSlide
+                    key={index}
+                    className="transition-transform duration-300"
+                  >
                     <FeedbackCard {...feedback} />
                   </SwiperSlide>
                 ))}

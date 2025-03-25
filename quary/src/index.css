@@ -26,3 +26,27 @@
     zoom: 1; /* Forces consistent scaling */
     text-rendering: optimizeLegibility; /* Better font rendering */
   }
+    .swiper-pagination {
+      position: absolute;
+      bottom: -24px;
+      /* Moves bullets 24px below the card */
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 10;
+    }
+  
+    /* Pagination bullets */
+    .swiper-pagination-bullet {
+      background: var(--swiper-pagination-bullet-inactive-color,
+          #c8cfd2) !important;
+      opacity: var(--swiper-pagination-bullet-inactive-opacity, 1) !important;
+    }
+  
+    /* Active bullet styles */
+    .swiper-pagination-bullet-active {
+      background: #853d16 !important;
+      height: 8px !important;
+      width: 10px !important;
+      border-radius: 18px !important;
+    }
