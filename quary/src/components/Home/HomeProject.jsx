@@ -64,16 +64,16 @@ function HomeProject() {
         <h1 className="container mx-auto text-[#151515] capitalize md:text-[48px] text-[24px] font-bold lg:w-[600px] w-full">
           Prospecting Progress, Planting Prosperity
         </h1>
-      </div>
-      
-      {/* Carousel Container */}
-      <div className="relative w-full overflow-hidden">
-        <div ref={carouselRef} className="flex gap-6  whitespace-nowrap">
-          {duplicatedProject.map((project, index) => (
-            <div key={index} className="w-[300px] flex-shrink-0">
-              <ProjectCard {...project} />
-            </div>
-          ))}
+
+        {/* Carousel Container */}
+        <div className="relative w-full overflow-hidden">
+          <div ref={carouselRef} className="flex gap-6  whitespace-nowrap">
+            {duplicatedProject.map((project, index) => (
+              <div key={index} className="w-[300px] flex-shrink-0">
+                <ProjectCard {...project} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
